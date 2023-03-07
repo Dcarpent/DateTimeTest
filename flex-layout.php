@@ -30,26 +30,35 @@
         .transparent {
             color: transparent !important;
         }
+
+        input.form-control{
+            outline: 0;
+            border: 0;  
+        }
+
+        input.form-control:focus,   
+        input.form-control:hover {
+
+            outline:0;
+            background-color: rgba(234,234,234,.5);                
+        }
         
     </style>
 </head>
 <body>
-<h1>Hello-Bootstrap</h1>
+
 
     <div class="container">
 
-        <div class="d-flex align-items-center mb-4">
-            <i class="fa fa-clock fa-lg mr-3"></i>
-            <span>September 30, 2023</span>
-            <span>08:00 AM</span>
-            <span>-</span>
-            <span>09:00 AM</span>
-            <span>All Day</span>
-        </div>  
+          
 
-       
-        <h3>Use This One</h3>
-        <div class="d-flex justify-content-start flex-column flex-sm-row p-3 font-smaller"> 
+        <div class="d-flex mt-4 mb-2"> 
+            <div class="p-2 mr-2 transparent"><i class="fa fa-calendar fa-lg"></i></div>
+            <input type="text" class="mx-1 form-control" placeholder="Add Event Title" style="font-size:20pt;width:450px;">        
+           
+        </div>
+        
+        <div class="d-flex justify-content-start flex-column flex-sm-row font-smaller"> 
             <div class="d-flex mb-2">
                 <div class="p-2 mr-2"><i class="fa fa-calendar fa-lg"></i></div>
                 <div class="p-2 mx-1 bg-light rounded">September 30, 2023</div>
